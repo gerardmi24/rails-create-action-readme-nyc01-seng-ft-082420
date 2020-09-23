@@ -105,13 +105,7 @@ they've filled out the form. Let's do two refactors:
 The revised `create` method should look something like this:
 
 ```ruby
-def create
-  @post = Post.new
-  @post.title = params[:title]
-  @post.description = params[:description]
-  @post.save
-  redirect_to post_path(@post)
-end
+
 ```
 
 In this refactored `create` action, we're following the convention of
